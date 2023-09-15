@@ -22,11 +22,16 @@
                     Console.Write("Введите значение h: ");
                     double h = double.Parse(Console.ReadLine());
 
-                    Console.WriteLine("Введите значение x: ");
+                    Console.Write("Введите значение x: ");
                     double x = double.Parse(Console.ReadLine());
 
                     if (a + h < 0)
+                    {
                         Console.WriteLine("Неверное значение! Сумма a и h не должна быть меньше нуля!");
+
+                        break;
+                    }
+                        
 
                     if (h > 3)
                         s = h * Math.Cos(Math.Sqrt(a + h));
