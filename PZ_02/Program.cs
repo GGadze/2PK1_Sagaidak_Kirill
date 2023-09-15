@@ -45,9 +45,9 @@
 
                     z = 0.1 * a * Math.Pow(h, 3) - 0.3 * s * Math.Pow(p, 3);
                     //вывод на консоль 
-                    Console.WriteLine($"Значение s равно {s}");
-                    Console.WriteLine($"Значение p равно {p}");
-                    Console.WriteLine($"Значение z равно {z}");
+                    Console.WriteLine($"Значение s равно {Math.Round(s, 2)}");
+                    Console.WriteLine($"Значение p равно {Math.Round(p, 2)}");
+                    Console.WriteLine($"Значение z равно {Math.Round(z, 2)}");
 
                     Console.ReadLine();
 
