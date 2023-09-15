@@ -4,16 +4,16 @@
     {
         static void Main(string[] args)
         {
-            bool flag = true;
-
-            while (flag)
+            
+            //делаем бесконечный цикл, чтобы по окончанию программа начиналась заново
+            while (true)
             {
 
-                try
+                try //ловим ошибки
                 {
 
 
-
+                    //объявляем и вводим с консоли переменные 
                     double s, p, z;
 
                     Console.Write("Введите значение a: ");
@@ -24,15 +24,15 @@
 
                     Console.Write("Введите значение x: ");
                     double x = double.Parse(Console.ReadLine());
-
-                    if (a + h < 0)
+                    
+                    if (a + h < 0) //проверка подкоренного выражения на отрицательное значение 
                     {
                         Console.WriteLine("Неверное значение! Сумма a и h не должна быть меньше нуля!");
 
                         break;
                     }
                         
-
+                    //вычисления 
                     if (h > 3)
                         s = h * Math.Cos(Math.Sqrt(a + h));
                     else
@@ -44,7 +44,7 @@
                         p = Math.Pow(h, 2) + 4 * Math.Sin(a + x) + x;
 
                     z = 0.1 * a * Math.Pow(h, 3) - 0.3 * s * Math.Pow(p, 3);
-
+                    //вывод на консоль 
                     Console.WriteLine($"Значение s равно {s}");
                     Console.WriteLine($"Значение p равно {p}");
                     Console.WriteLine($"Значение z равно {z}");
